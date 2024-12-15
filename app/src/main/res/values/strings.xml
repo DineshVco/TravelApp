@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Login Page</string>
+    <string name="welcome">Welcome</string>
+    <string name="user_profile">User Profile</string>
+    <string name="upcoming_trips">Upcoming Trips</string>
+    <string name="trip_title_1">Melaka Heritage Tour</string>
+    <string name="trip_date_1">April 15, 2024 - April 17, 2024</string>
+    <string name="trip_title_2">Genting Highland Adventure</string>
+    <string name="trip_date_2">May 20, 2024 - May 22, 2024</string>
+    <string name="trip_title_3">Explore Kuala Lumpur</string>
+    <string name="trip_date_3">June 1, 2024 - June 3, 2024</string>
+    <string name="trip_image">Trip Image</string>
+    <string name="home">Home</string>
+    <string name="login">Login</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+</resources>

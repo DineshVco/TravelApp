@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <!-- User Profile Icon -->
+    <ImageView
+        android:id="@+id/ivUserProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_user_profile"
+        android:contentDescription="@string/user_profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_background"
+        android:padding="8dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/ivUserProfile"
+        android:layout_marginStart="16dp"
+        android:layout_alignTop="@id/ivUserProfile"
+        android:textColor="@color/primary_text_color"
+        android:layout_centerVertical="true" />
+
+    <!-- Main Content Area -->
+    <ScrollView
+        android:id="@+id/svMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivUserProfile"
+        android:layout_marginTop="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Upcoming Trips Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upcoming_trips"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/primary_text_color" />
+
+            <!-- Trip Example 1: Melaka -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_trip_melaka"
+                    android:contentDescription="@string/trip_image"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trip_title_1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trip_date_1"
+                        android:textSize="14sp"
+                        android:textColor="@color/secondary_text_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Trip Example 2: Genting Highland -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_trip_genting"
+                    android:contentDescription="@string/trip_image"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trip_title_2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trip_date_2"
+                        android:textSize="14sp"
+                        android:textColor="@color/secondary_text_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Trip Example 3: Kuala Lumpur -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_trip_kuala_lumpur"
+                    android:contentDescription="@string/trip_image"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trip_title_3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trip_date_3"
+                        android:textSize="14sp"
+                        android:textColor="@color/secondary_text_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
